@@ -1,0 +1,20 @@
+const router = require('express').Router()
+
+router.use('/auth', require('./authRoutes'))
+router.use('/users', require('./userRoutes'))
+router.use('/categories', require('./categoryRoutes'))
+router.use('/collections', require('./collectionRoutes'))
+router.use('/products', require('./productRoutes'))
+router.use('/orders', require('./orderRoutes'))
+router.use('/invoices', require('./invoiceRoutes'))
+router.use('/banners', require('./bannerRoutes'))
+router.use('/promo-codes', require('./promoCodeRoutes'))
+router.use('/flash-sales', require('./flashSaleRoutes'))
+router.use('/support', require('./supportRoutes'))
+router.use('/updates', require('./updateRoutes'))
+router.use('/dashboard', require('./dashboardRoutes'))
+router.use('/payments', require('./paymentRoutes'))
+router.use('/shipping', require('./shippingRoutes'))
+router.use('/newsletter', require('./newsletterRoutes'))
+
+module.exports = router
